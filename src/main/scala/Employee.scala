@@ -1,7 +1,7 @@
 import scala.util.Random
 
 class Employee(var name: String, var timeEmployedInDays: Int) {
-  private val age = Employee.getRandomAge()
+   def age = Employee.getRandomAge()
 
   def getAge(): Int = age
   override def toString = name + " " + getAge() + " " + timeEmployedInDays
